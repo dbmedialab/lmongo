@@ -25,7 +25,7 @@ class LMongoServiceProvider extends ServiceProvider {
 	public function register()
 	{
 		// Register the package configuration.
-		$this->app['config']->package('navruzm/lmongo', __DIR__.'/../config');
+		$this->app['config']->package('dbmedialab/lmongo', __DIR__.'/../config');
 
 		$this->app['lmongo'] = $this->app->share(function($app)
 		{
